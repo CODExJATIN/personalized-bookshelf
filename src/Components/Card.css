@@ -1,0 +1,110 @@
+.book-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.9em;
+}
+
+.book-card p {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+.book-card button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-card button:hover {
+    background-color: #0056b3;
+}
+
+.book-card button:disabled {
+    background-color: #6c757d;
+}
+
+.book-card button.add {
+    background-color: #007bff;
+}
+
+.book-card button.remove {
+    background-color: #dc3545;
+}
+
+.book-content {
+    overflow: hidden;
+}
+
+.book-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    
+}
+
+.book-content p {
+    margin: 0 0 15px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle long author names */
+}
+
+.add-button, .remove-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.add-button {
+    background-color: #007bff;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.remove-button {
+    background-color: #dc3545;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-cover{
+
+    width: 8rem;
+}

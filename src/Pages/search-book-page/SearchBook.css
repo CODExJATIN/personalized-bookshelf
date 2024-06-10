@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.search-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 50vh;
+    text-align: center;
+}
+
+
+
+.bookshelf-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bookshelf-button:hover {
+    background-color: #218838;
+}
+
+.instruction-screen{
+    height: 500px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color:beige;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Rubik, sans-serif;
+}
+
+@media (min-width: 600px) {
+    .book-card {
+        width: calc(50% - 20px);
+    }
+    .instruction-screen{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+    .book-card {
+        width: calc(33.33% - 20px);
+    }
+
+    .instruction-screen{
+        font-size: 50px;
+    }
+}
+
+.header-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Rubik,sans-serif;
+}
+
+.spin-icon{
+    height: 100px;
+    width: 100px;
+}
+
+
